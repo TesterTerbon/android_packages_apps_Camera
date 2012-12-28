@@ -825,8 +825,8 @@ public class PanoramaModule implements CameraModule,
     private void resetToPreview() {
         reset();
         if (!mPaused) {
-            mMosaicView.onPause();
-            mMosaicView.onResume();
+            //mMosaicView.onPause();
+            //mMosaicView.onResume();
             startCameraPreview();
         }
     }
