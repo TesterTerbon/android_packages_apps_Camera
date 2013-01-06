@@ -824,11 +824,7 @@ public class PanoramaModule implements CameraModule,
 
     private void resetToPreview() {
         reset();
-        if (!mPaused) {
-            //mMosaicView.onPause();
-            //mMosaicView.onResume();
-            startCameraPreview();
-        }
+        if (!mPaused) startCameraPreview();
     }
 
     private static class FlipBitmapDrawable extends BitmapDrawable {
